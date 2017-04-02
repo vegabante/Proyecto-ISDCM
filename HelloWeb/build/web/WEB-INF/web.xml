@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>servletLogin</servlet-name>
+        <servlet-class>controller.servletLogin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>servletLogout</servlet-name>
+        <servlet-class>controller.servletLogout</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>servletHome</servlet-name>
+        <servlet-class>controller.servletHome</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>servletRegistroUsu</servlet-name>
+        <servlet-class>controller.servletRegistroUsu</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servletLogin</servlet-name>
+        <url-pattern>/servletLogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>servletLogout</servlet-name>
+        <url-pattern>/servletLogout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>servletHome</servlet-name>
+        <url-pattern>/servletHome</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>servletRegistroUsu</servlet-name>
+        <url-pattern>/servletRegistroUsu</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
