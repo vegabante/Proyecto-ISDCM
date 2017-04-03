@@ -46,6 +46,8 @@ String message="";
     video.insert(strArray);
     message = "El usuario fue registrado con éxito.";   
 
+    
+    //Prueba
 
 
 }
