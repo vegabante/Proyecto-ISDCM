@@ -1,4 +1,8 @@
 # Proyecto-ISDCM
+
+Template base: AdminLTE2
+https://github.com/almasaeed2010/AdminLTE
+
 Portal admin con login/logout y register
 
 1. Sesiones login logout LISTO
