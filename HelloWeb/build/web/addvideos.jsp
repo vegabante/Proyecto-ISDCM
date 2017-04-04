@@ -1,4 +1,7 @@
 <%@include file="header.jsp" %>
+<script src="http://cdn.jsdelivr.net/timepicker.js/latest/timepicker.min.js"></script>
+<link href="http://cdn.jsdelivr.net/timepicker.js/latest/timepicker.min.css" rel="stylesheet"/>
+
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -27,35 +30,35 @@
               <div class="box-body">
                 <div class="form-group has-feedback">
                   <label for="exampleInputEmail1">ID</label>
-                  <input type="number" name="id" class="form-control" placeholder="ID" required>
+                  <input type="number" name="id" class="form-control" placeholder="ID" required="required">
                 </div>
                 <div class="form-group has-feedback">
                   <label for="exampleInputPassword1">Título</label>
-                  <input type="text" name="title" class="form-control" placeholder="Título" required>
+                  <input type="text" name="title" class="form-control" placeholder="Título" required="required">
                 </div>
                 <div class="form-group has-feedback">
                   <label for="exampleInputPassword1">Autor</label>
-                  <input type="text" name="author" class="form-control" placeholder="Autor" required>
+                  <input type="text" name="author" class="form-control" placeholder="Autor" required="required">
                 </div>                  
                 <div class="form-group has-feedback">
                   <label for="exampleInputPassword1">Fecha de Creación</label>
-                  <input type="date" name="creationdate" class="form-control" placeholder="Fecha de Creación" required>
+                  <input type="date" name="creationdate" class="form-control" placeholder="Fecha de Creación" required="required">
                 </div>
                 <div class="form-group has-feedback">
                   <label for="exampleInputPassword1">Duración</label>
-                  <input type="number" name="duration" class="form-control" placeholder="Duración (minutos)" required>
+                  <input type="text" name="duration" class="form-control" placeholder="Duración (hh:mm:ss)" pattern="^[0-9][0-9]:[0-5][0-9]:[0-5][0-9]$" required="required">
                 </div>
                 <div class="form-group has-feedback">
                   <label for="exampleInputPassword1">Reproducciones</label>
-                  <input type="number" name="reproductions" class="form-control" placeholder="Reproducciones" required>
+                  <input type="number" name="reproductions" class="form-control" placeholder="Reproducciones" required="required">
                 </div>
                 <div class="form-group has-feedback">
                   <label for="exampleInputPassword1">Descripción</label>
-                  <input type="text" name="description" class="form-control" placeholder="Decripción" required>
+                  <input type="text" name="description" class="form-control" placeholder="Decripción" required="required">
                 </div>
                 <div class="form-group has-feedback">
                   <label for="exampleInputPassword1">Formato</label>
-                  <input type="text" name="format" class="form-control" placeholder="Formato" required>
+                  <input type="text" name="format" class="form-control" placeholder="Formato" required="required">
                 </div>                  
               </div>
               <!-- /.box-body -->
