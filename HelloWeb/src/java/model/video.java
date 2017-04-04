@@ -5,11 +5,14 @@
  */
 package model;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.Statement;
+import java.sql.*;
+//import java.sql.Connection;
+//import java.sql.DriverManager;
+//import java.sql.Statement;
 import java.text.MessageFormat;
 import java.util.Arrays;
+
+
 
 /**
  *
@@ -24,7 +27,7 @@ public class video {
        try{
            System.out.println("Argument: " + Arrays.toString(args));
            
-           String sqlStatement = MessageFormat.format("INSERT INTO VIDEOS VALUES(''{0}'',''{1}'',''{2}'',''{3}'',''{4}'',''{5}'',''{6}'',''{7}'')", 
+           String sqlStatement = MessageFormat.format("INSERT INTO VIDEOS VALUES(NUMERIC(''{0}''),''{1}'',''{2}'',DATE(''{3}''),TIME(''{4}''),''{5}'',''{6}'',''{7}'')", 
                                                 args[0], args[1], args[2], args[3], args[4], args[5], args[6], args[7]);
            
            

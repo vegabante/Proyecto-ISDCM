@@ -35,13 +35,15 @@ public class servletVideo extends HttpServlet {
     String title =request.getParameter("title");  
     String author =request.getParameter("author");
     String creationdate =request.getParameter("creationdate");
+    String duration =request.getParameter("duration");
     String reproductions =request.getParameter("reproductions");
     String description =request.getParameter("description");
     String format =request.getParameter("format");
-    String message="";
 
-    String[] strArray = new String[]{id, title, author, creationdate, reproductions, description, format};
+    String[] strArray = new String[]{id, title, author, creationdate, duration, reproductions, description, format};
     video.insert(strArray); 
+    
+    request.getRequestDispatcher("servletHome").forward(request, response);
 
 
     }

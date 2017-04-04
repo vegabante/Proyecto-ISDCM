@@ -30,6 +30,7 @@ public class servletRegistroUsu extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        
         String name =request.getParameter("name");  
         String lastname =request.getParameter("lastname");  
         String email =request.getParameter("email");
