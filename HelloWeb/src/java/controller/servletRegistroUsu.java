@@ -30,6 +30,7 @@ public class servletRegistroUsu extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        
         String name =request.getParameter("name");  
         String lastname =request.getParameter("lastname");  
         String email =request.getParameter("email");
@@ -37,28 +38,15 @@ public class servletRegistroUsu extends HttpServlet {
         String password =request.getParameter("password");
         String repassword =request.getParameter("repassword");
         String message="";
-        String emailregex = "^[_A-Za-z0-9-]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9-]+)*(\\.[A-Za-z]{2,})$";
+        //String emailregex = "^[_A-Za-z0-9-]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9-]+)*(\\.[A-Za-z]{2,})$";
 
         if(!password.equals(repassword)){ 
             message = "ERROR: Las contraseñas no coinciden. Intente de nuevo";
         }
 
-        //-->función añadida<--
-        else if(name.isEmpty() || lastname.isEmpty() || email.isEmpty() || user.isEmpty() || password.isEmpty() || repassword.isEmpty()){
-            message = "Por favor, completar el formulario antes de enviar.";
-        }
-        ////-->función añadida<--
-
-
         else if(usuario.checkIfUserExists(user)){
             message = "Este usuario ya se encuentra registrado.";
         }
-
-        ////-->función añadida<--
-        else if(email.matches(emailregex)==false){
-            message = "Dirección de correo electrónico inválida.";   
-        }
-        ////-->función añadida<--
 
         else{
             String[] strArray = new String[]{name,lastname,email, user, password, repassword};

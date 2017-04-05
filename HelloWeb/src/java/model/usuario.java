@@ -19,6 +19,8 @@ public class usuario {
    private static String user1 = "isdcm";
    private static String password1 = "1234";
    
+   
+   
    public static void insert (String[] args){
        try{
            System.out.println("Argument: " + Arrays.toString(args));

@@ -3,8 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Victoria/Documents/Master/ISDCM_Shared/ISCDM/Practica1/HelloWeb/web/index.html</file>
-            <file>file:/C:/Users/Victoria/Documents/Master/ISDCM_Shared/ISCDM/Practica1/HelloWeb/web/login.html</file>
+            <file>file:/Users/Osmar/Documents/Proyecto-ISDCM/HelloWeb/src/java/model/usuario.java</file>
+            <file>file:/Users/Osmar/Documents/Proyecto-ISDCM/HelloWeb/src/java/controller/servletRegistroUsu.java</file>
+            <file>file:/Users/Osmar/Documents/Proyecto-ISDCM/HelloWeb/web/register.html</file>
+            <file>file:/Users/Osmar/Documents/Proyecto-ISDCM/HelloWeb/web/index.jsp</file>
+            <file>file:/Users/Osmar/Documents/Proyecto-ISDCM/HelloWeb/src/java/model/video.java</file>
+            <file>file:/Users/Osmar/Documents/Proyecto-ISDCM/HelloWeb/src/java/controller/servletLogin.java</file>
+            <file>file:/Users/Osmar/Documents/Proyecto-ISDCM/HelloWeb/web/addvideos.jsp</file>
+            <file>file:/Users/Osmar/Documents/Proyecto-ISDCM/HelloWeb/src/java/controller/servletVideo.java</file>
         </group>
     </open-files>
 </project-private>

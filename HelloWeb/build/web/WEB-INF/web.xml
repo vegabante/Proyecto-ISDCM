@@ -16,6 +16,10 @@
         <servlet-name>servletRegistroUsu</servlet-name>
         <servlet-class>controller.servletRegistroUsu</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>servletVideo</servlet-name>
+        <servlet-class>controller.servletVideo</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>servletLogin</servlet-name>
         <url-pattern>/servletLogin</url-pattern>
@@ -31,6 +35,10 @@
     <servlet-mapping>
         <servlet-name>servletRegistroUsu</servlet-name>
         <url-pattern>/servletRegistroUsu</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>servletVideo</servlet-name>
+        <url-pattern>/servletVideo</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

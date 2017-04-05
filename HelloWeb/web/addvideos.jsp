@@ -1,4 +1,5 @@
 <%@include file="header.jsp" %>
+
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -15,42 +16,53 @@
 
     <!-- Main content -->
     <section class="content">
-
-      Agregar form con los campos del video
       <div class="row">
           <div class="col-md-12">
-                    <div class="box box-primary">
+           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">Quick Example</h3>
+              <h3 class="box-title">Registro de Vídeos</h3>
             </div>
             <!-- /.box-header -->
             <!-- form start -->
-            <form role="form">
+            <form action="servletVideo" method="post">
               <div class="box-body">
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+<!--                <div class="form-group has-feedback">
+                  <label for="exampleInputEmail1">ID</label>
+                  <input type="number" name="id" class="form-control" placeholder="ID" required="required">
+                </div>-->
+                <div class="form-group has-feedback">
+                  <label for="exampleInputPassword1">Título</label>
+                  <input type="text" name="title" class="form-control" placeholder="Título" required="required">
                 </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                <div class="form-group has-feedback">
+                  <label for="exampleInputPassword1">Autor</label>
+                  <input type="text" name="author" class="form-control" placeholder="Autor" required="required">
+                </div>                  
+                <div class="form-group has-feedback">
+                  <label for="exampleInputPassword1">Fecha de Creación</label>
+                  <input type="date" name="creationdate" class="form-control" placeholder="Fecha de Creación" required="required">
                 </div>
-                <div class="form-group">
-                  <label for="exampleInputFile">File input</label>
-                  <input type="file" id="exampleInputFile">
-
-                  <p class="help-block">Example block-level help text here.</p>
+                <div class="form-group has-feedback">
+                  <label for="exampleInputPassword1">Duración</label>
+                  <input type="text" name="duration" class="form-control" placeholder="Duración (hh:mm:ss)" pattern="^[0-9][0-9]:[0-5][0-9]:[0-5][0-9]$" required="required">
                 </div>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox"> Check me out
-                  </label>
+                <div class="form-group has-feedback">
+                  <label for="exampleInputPassword1">Reproducciones</label>
+                  <input type="number" name="reproductions" class="form-control" placeholder="Reproducciones" required="required">
                 </div>
+                <div class="form-group has-feedback">
+                  <label for="exampleInputPassword1">Descripción</label>
+                  <input type="text" name="description" class="form-control" placeholder="Decripción" required="required">
+                </div>
+                <div class="form-group has-feedback">
+                  <label for="exampleInputPassword1">Formato</label>
+                  <input type="text" name="format" class="form-control" placeholder="Formato" required="required">
+                </div>                  
               </div>
               <!-- /.box-body -->
 
               <div class="box-footer">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">Enviar</button>
               </div>
             </form>
           </div>
