@@ -21,28 +21,7 @@
     <!-- Main content -->
     <section class="content">
 
-
-
-<%
-//String id = request.getParameter("id");
-String driverName = "com.mysql.jdbc.Driver";
-String connectionUrl = "jdbc:derby://localhost:1527/";
-String dbName = "DBUsuarios";
-String userId = "isdcm";
-String password = "1234";
-
-try {
-Class.forName(driverName);
-} catch (ClassNotFoundException e) {
-e.printStackTrace();
-}
-
-Connection connection = null;
-Statement statement = null;
-ResultSet resultSet = null;
-%>
-<h2 align="center"><font><strong>Retrieve data from database in jsp</strong></font></h2>
-<table align="center" cellpadding="5" cellspacing="5" border="1">
+<table align="center" cellpadding="5" cellspacing="5" border="1" >
 <tr>
 
 </tr>
@@ -56,37 +35,23 @@ ResultSet resultSet = null;
 <td><b>Descripción</b></td>
 <td><b>Formato</b></td>
 </tr>
-<%
-try{ 
-connection = DriverManager.getConnection(connectionUrl+dbName, userId, password);
-statement=connection.createStatement();
-String sql ="SELECT * FROM VIDEOS";
 
-resultSet = statement.executeQuery(sql);
-while(resultSet.next()){
-%>
 <tr bgcolor="#DEB887">
 
-<td><%=resultSet.getString("ID") %></td>
-<td><%=resultSet.getString("TITULO") %></td>
-<td><%=resultSet.getString("AUTOR") %></td>
-<td><%=resultSet.getString("FECHA_CREACION") %></td>
-<td><%=resultSet.getString("DURACION") %></td>
-<td><%=resultSet.getString("REPRODUCCIONES") %></td>
-<td><%=resultSet.getString("DESCRIPCION") %></td>
-<td><%=resultSet.getString("FORMATO") %></td>
+<td>${id}</td>
+<td>${title}</td>
+<td>${author}</td>
+<td>${creation_date}</td>
+<td>${duration}</td>
+<td>${reproductions}</td>
+<td>${description}</td>
+<td>${format}</td>
 
 
 </tr>
 
-<% 
-}
-
-} catch (Exception e) {
-e.printStackTrace();
-}
-%>
 </table>
+
       
     </section>
     <!-- /.content -->

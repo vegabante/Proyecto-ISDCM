@@ -1,6 +1,4 @@
 <%@include file="header.jsp" %>
-<script src="http://cdn.jsdelivr.net/timepicker.js/latest/timepicker.min.js"></script>
-<link href="http://cdn.jsdelivr.net/timepicker.js/latest/timepicker.min.css" rel="stylesheet"/>
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -28,10 +26,10 @@
             <!-- form start -->
             <form action="servletVideo" method="post">
               <div class="box-body">
-                <div class="form-group has-feedback">
+<!--                <div class="form-group has-feedback">
                   <label for="exampleInputEmail1">ID</label>
                   <input type="number" name="id" class="form-control" placeholder="ID" required="required">
-                </div>
+                </div>-->
                 <div class="form-group has-feedback">
                   <label for="exampleInputPassword1">Título</label>
                   <input type="text" name="title" class="form-control" placeholder="Título" required="required">

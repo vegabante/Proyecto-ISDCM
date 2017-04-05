@@ -31,7 +31,7 @@ public class servletVideo extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
-    String id =request.getParameter("id");  
+//    String id =request.getParameter("id");  
     String title =request.getParameter("title");  
     String author =request.getParameter("author");
     String creationdate =request.getParameter("creationdate");
@@ -40,7 +40,7 @@ public class servletVideo extends HttpServlet {
     String description =request.getParameter("description");
     String format =request.getParameter("format");
 
-    String[] strArray = new String[]{id, title, author, creationdate, duration, reproductions, description, format};
+    String[] strArray = new String[]{title, author, creationdate, duration, reproductions, description, format};
     video.insert(strArray); 
     
     request.getRequestDispatcher("servletHome").forward(request, response);

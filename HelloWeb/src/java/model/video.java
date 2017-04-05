@@ -27,8 +27,8 @@ public class video {
        try{
            System.out.println("Argument: " + Arrays.toString(args));
            
-           String sqlStatement = MessageFormat.format("INSERT INTO VIDEOS VALUES(INT(''{0}''),''{1}'',''{2}'',DATE(''{3}''),TIME(''{4}''),INT(''{5}''),''{6}'',''{7}'')", 
-                                                args[0], args[1], args[2], args[3], args[4], args[5], args[6], args[7]);
+           String sqlStatement = MessageFormat.format("INSERT INTO VIDEOS (TITULO, AUTOR, FECHA_CREACION, DURACION, REPRODUCCIONES, DESCRIPCION, FORMATO) VALUES(''{0}'',''{1}'',DATE(''{2}''),TIME(''{3}''),INT(''{4}''),''{5}'',''{6}'')", 
+                                                args[0], args[1], args[2], args[3], args[4], args[5], args[6]);
            
            
            System.out.println("SQL statement: " + sqlStatement);
