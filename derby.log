@@ -1,20 +1,7 @@
-Tue Apr 04 14:40:54 CEST 2017 : Apache Derby Network Server - 10.10.2.0 - (1582446) started and ready to accept connections on port 1527
+Wed Apr 05 21:54:59 CEST 2017 : Apache Derby Network Server - 10.10.2.0 - (1582446) started and ready to accept connections on port 1527
 ----------------------------------------------------------------
-Tue Apr 04 14:40:58 CEST 2017:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance a816c00e-015b-38fb-6655-ffffbbe4413e 
-on database directory /Users/Osmar/Documents/Proyecto-ISDCM/ISDCM with class loader sun.misc.Launcher$AppClassLoader@66d3c617 
-Loaded from file:/Applications/NetBeans/glassfish-4.1.1/javadb/lib/derby.jar
-java.vendor=Oracle Corporation
-java.runtime.version=1.8.0_121-b13
-user.dir=/Applications/NetBeans/glassfish-4.1.1/javadb
-os.name=Mac OS X
-os.arch=x86_64
-os.version=10.12.4
-derby.system.home=/Users/Osmar/Documents/Proyecto-ISDCM
-Database Class Loader started - derby.database.classpath=''
-----------------------------------------------------------------
-Tue Apr 04 14:46:17 CEST 2017:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance a094c023-015b-38fb-6655-ffffbbe4413e 
+Wed Apr 05 21:56:47 CEST 2017:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance a816c00e-015b-3faf-1f28-ffffbbe4413e 
 on database directory /Users/Osmar/Documents/Proyecto-ISDCM/DBUsuarios with class loader sun.misc.Launcher$AppClassLoader@66d3c617 
 Loaded from file:/Applications/NetBeans/glassfish-4.1.1/javadb/lib/derby.jar
 java.vendor=Oracle Corporation
@@ -25,7 +12,3 @@ os.arch=x86_64
 os.version=10.12.4
 derby.system.home=/Users/Osmar/Documents/Proyecto-ISDCM
 Database Class Loader started - derby.database.classpath=''
-----------------------------------------------------------------
-Tue Apr 04 15:14:44 CEST 2017:
-Shutting down instance a816c00e-015b-38fb-6655-ffffbbe4413e on database directory /Users/Osmar/Documents/Proyecto-ISDCM/ISDCM with class loader sun.misc.Launcher$AppClassLoader@66d3c617 
-Tue Apr 04 15:14:44 CEST 2017 Thread[DRDAConnThread_4,5,main] (DATABASE = ISDCM), (DRDAID = {14}), Database 'ISDCM' shutdown.

@@ -20,10 +20,6 @@
         <servlet-name>servletVideo</servlet-name>
         <servlet-class>controller.servletVideo</servlet-class>
     </servlet>
-    <servlet>
-        <servlet-name>servletListaVid</servlet-name>
-        <servlet-class>controller.servletListaVid</servlet-class>
-    </servlet>
     <servlet-mapping>
         <servlet-name>servletLogin</servlet-name>
         <url-pattern>/servletLogin</url-pattern>
@@ -43,10 +39,6 @@
     <servlet-mapping>
         <servlet-name>servletVideo</servlet-name>
         <url-pattern>/servletVideo</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>servletListaVid</servlet-name>
-        <url-pattern>/servletListaVid</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

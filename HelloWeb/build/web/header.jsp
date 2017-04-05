@@ -257,7 +257,7 @@ desired effect
       <ul class="sidebar-menu">
         <li class="header">HEADER</li>
         <!-- Optionally, you can add icons to the links -->
-        <li><a href="home.jsp"><i class="fa fa-link"></i> <span>Ver videos</span></a></li>
+        <li><a href="viewVideos.jsp"><i class="fa fa-link"></i> <span>Ver videos</span></a></li>
         <li><a href="addvideos.jsp"><i class="fa fa-link"></i> <span>Agregar videos</span></a></li>
         <li class="treeview">
           <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>

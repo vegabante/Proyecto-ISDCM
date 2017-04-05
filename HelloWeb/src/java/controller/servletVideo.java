@@ -11,6 +11,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import model.video;
 
 /**
@@ -39,11 +40,14 @@ public class servletVideo extends HttpServlet {
     String reproductions =request.getParameter("reproductions");
     String description =request.getParameter("description");
     String format =request.getParameter("format");
+        HttpSession session = request.getSession();
+        String user = session.getAttribute("user").toString();
+        System.out.println("Usuario: " + user );
 
     String[] strArray = new String[]{title, author, creationdate, duration, reproductions, description, format};
-    video.insert(strArray); 
+    video.insert(strArray, user); 
     
-    request.getRequestDispatcher("servletHome").forward(request, response);
+    request.getRequestDispatcher("/viewVideos.jsp").forward(request, response);
 
 
     }
