@@ -21,8 +21,58 @@
 
     <!-- Main content -->
     <section class="content">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box">
+                    <div class="box-header with-border">
+                      <h3 class="box-title">Listado de videos disponibles</h3>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                      <table class="table table-bordered">
+                        <tr>
+                          <th >ID</th>
+                          <th>Título</th>
+                          <th>Autor</th>
+                          <th>Fecha de Creación</th>
+                          <th>Duración</th>
+                          <th>Reproducciones</th>
+                          <th>Descripción</th>
+                          <th>Formato</th>
+                        </tr>
+                        
+                        <%
 
+                            String user = request.getSession().getAttribute("user").toString();
+                            ResultSet resultSet = video.getVideos(user);
+                            while(resultSet.next()){
 
+<<<<<<< HEAD
+                        %>
+                        <tr>
+
+                        <td><%=resultSet.getString("ID") %></td>
+                        <td><%=resultSet.getString("TITULO") %></td>
+                        <td><%=resultSet.getString("AUTOR") %></td>
+                        <td><%=resultSet.getString("FECHA_CREACION") %></td>
+                        <td><%=resultSet.getString("DURACION") %></td>
+                        <td><%=resultSet.getString("REPRODUCCIONES") %></td>
+                        <td><%=resultSet.getString("DESCRIPCION") %></td>
+                        <td><%=resultSet.getString("FORMATO") %></td>
+
+                        </tr>
+
+                        <%
+                        }
+
+                        %>
+
+                      </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+=======
     <h2 align="center"><font><strong>Retrieve data from database in jsp</strong></font></h2>
     <table align="center" cellpadding="5" cellspacing="5" border="1">
     <tr>
@@ -65,6 +115,7 @@
 
 
     </table>
+>>>>>>> origin/osmarbranch
 
       
     </section>
