@@ -58,7 +58,7 @@ desired effect
   <header class="main-header">
 
     <!-- Logo -->
-    <a href="#" class="logo">
+    <a href="home.jsp" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"></span>
       <!-- logo for regular state and mobile devices -->
@@ -177,7 +177,7 @@ desired effect
               <!-- The user image in the navbar-->
               <img src="img/user2-160x160.jpg" class="user-image" alt="User Image">
               <!-- hidden-xs hides the username on small devices so only the image appears. -->
-              <span class="hidden-xs">Alexander Pierce</span>
+              <span class="hidden-xs">Alexander Pierce </span>
             </a>
             <ul class="dropdown-menu">
               <!-- The user image in the menu -->
@@ -185,7 +185,7 @@ desired effect
                 <img src="img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                 <p>
-                  Alexander Pierce - Web Developer
+                  Alexander Pierce - Web Developer 
                   <small>Member since Nov. 2012</small>
                 </p>
               </li>
@@ -235,7 +235,7 @@ desired effect
           <img src="img/user2-160x160.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Alexander Pierce</p>
+          <p>Alexander Pierce </p>
           <!-- Status -->
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
@@ -257,6 +257,7 @@ desired effect
       <ul class="sidebar-menu">
         <li class="header">HEADER</li>
         <!-- Optionally, you can add icons to the links -->
+        <li><a href="servletHome"><i class="fa fa-link"></i> <span>Home</span></a></li>
         <li><a href="viewVideos.jsp"><i class="fa fa-link"></i> <span>Ver videos</span></a></li>
         <li><a href="addvideos.jsp"><i class="fa fa-link"></i> <span>Agregar videos</span></a></li>
         <li class="treeview">

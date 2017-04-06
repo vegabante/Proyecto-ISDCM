@@ -40,6 +40,7 @@ public class servletHome extends HttpServlet {
                 String name=(String)session.getAttribute("user");
                 System.out.println("Hello, "+name+" Welcome to Profile");
                 //out.print("Hello, "+name+" Welcome to Profile");  
+                request.setAttribute("name", name);
                 request.getRequestDispatcher("home.jsp").forward(request, response);
             }  
             else{  
