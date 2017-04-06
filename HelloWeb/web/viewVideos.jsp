@@ -47,6 +47,7 @@
                             ResultSet resultSet = video.getVideos(user);
                             while(resultSet.next()){
 
+<<<<<<< HEAD
                         %>
                         <tr>
 
@@ -71,6 +72,50 @@
                 </div>
             </div>
         </div>
+=======
+    <h2 align="center"><font><strong>Retrieve data from database in jsp</strong></font></h2>
+    <table align="center" cellpadding="5" cellspacing="5" border="1">
+    <tr>
+
+    </tr>
+    <tr bgcolor="#A52A2A">
+    <td><b>ID</b></td>
+    <td><b>Título</b></td>
+    <td><b>Autor</b></td>
+    <td><b>Fecha de Creación</b></td>
+    <td><b>Duración</b></td>
+    <td><b>Reproducciones</b></td>
+    <td><b>Descripción</b></td>
+    <td><b>Formato</b></td>
+    </tr>
+    <%
+
+        String user = request.getSession().getAttribute("user").toString();
+        ResultSet resultSet = video.getVideos(user);
+        while(resultSet.next()){
+
+    %>
+    <tr bgcolor="#DEB887">
+
+    <td><%=resultSet.getString("ID") %></td>
+    <td><%=resultSet.getString("TITULO") %></td>
+    <td><%=resultSet.getString("AUTOR") %></td>
+    <td><%=resultSet.getString("FECHA_CREACION") %></td>
+    <td><%=resultSet.getString("DURACION") %></td>
+    <td><%=resultSet.getString("REPRODUCCIONES") %></td>
+    <td><%=resultSet.getString("DESCRIPCION") %></td>
+    <td><%=resultSet.getString("FORMATO") %></td>
+
+    </tr>
+
+    <%
+    }
+
+    %>
+
+
+    </table>
+>>>>>>> origin/osmarbranch
 
       
     </section>
